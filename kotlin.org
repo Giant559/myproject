@@ -1,0 +1,147 @@
+* Variables, Strings, and Ints
+
+var age = 28
+age = 30
+val unmodifieable
+var modifiable
+
+var age: Int = 0
+
+strings
+var favCandy = "Snicker"
+var favCandy : String = "Snicker"
+
+"I am $age years old I love $favCandy"
+
+println()
+print()
+
+* Math and Comments
+
+// comment
+
+/*
+
+multiline comment
+
+*/
+
+var weight : Double = 100.6
+           : Float
+
+var wellt = 48
+wallet -= 5
+
+* If Statements and Booleans
+var isTheDogAlive = true //false
+      : Boolean
+
+if () {
+
+
+} else {
+}
+
+
+* Lists and Arrays
+
+var luckNumbers = listOf(1,5,6,7)
+                = arrayOf<Int>()
+		  mutableListOf(1,2)
+luckyNumbers.add(6,0)
+
+luckNumbers[0] // to grab from a list
+.size //gets the size
+
+* For Loops
+
+for (x in 1..10){
+  prinln(x)
+}
+
+var favCandy - listOf("Snickers","100 grand bar", "fun dip")
+
+for (candy in favCandy) {
+  println(candy)
+}
+
+* Maps
+
+var dogs = mapOf("Fido" to 8, "Sarah" to 17, "Shawn" to 6)
+dogs["Fido"]
+
+mutableMapOf /// a mutable map
+
+* Functions
+
+fun hello() {
+  println()
+}
+
+hello()
+
+//to return info
+
+fun hello(): String {
+  return "Hello world"
+}
+//paraemeters
+fun hello(name: String): String {
+  return "Hello $name"
+}
+
+hello("Nick")
+
+//provide default parameter
+fun hello(name: String = "Rick", puncution: String): String {
+return "Hello $name$puncutiaon"
+}
+
+//quick way to return
+fun addNum(num1: Int, num2: Int) = num1 + num2
+
+
+* Classes
+
+class Dog {
+ var name: String
+var age: Int
+  init {
+    name = ""
+    age = 0
+    }
+  constructor(name: String, age: Int) {
+
+this.name = name
+this.age = age
+}
+
+constructor() {
+name = ""
+age=0
+}
+
+fun dogInfo() {
+println("$name is $age years old")
+}
+
+}
+
+var myDawg = Dog()
+
+class Cat(var name: String, var age: Int) {
+
+}
+var myCat = Cat("nemo", 5)
+* Nullable
+
+var age: Int? = 28
+
+age = null
+
+class Dog {}
+
+var myDawg:Dog? = Dog()
+myDawg = null
+
+var newNum = age!! // int object
